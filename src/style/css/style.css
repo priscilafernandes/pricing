@@ -1,9 +1,131 @@
-/* Layout */
 /* Colors */
 /* Typography */
+/* Layout */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #494c5f;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  background: url("../../../images/bg-top.svg") no-repeat right top, url("../../../images/bg-bottom.svg") no-repeat left bottom;
+  background-size: auto 75%, auto 35%;
+  background-color: #f6f6fe;
+  height: 100%;
+  font-weight: 700;
+  padding: 2em;
+}
+
+.title {
+  margin-top: 1em;
+  color: #6d708d;
+}
+
+.switch {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #b3b5c6;
+  margin-bottom: 3em;
+}
+
+.switch__option__left {
+  text-align: right;
+}
+
+.switch__option__right {
+  text-align: left;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.card__item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3em;
+  box-shadow: rgba(179, 181, 198, 0.3) 0 0 20px;
+}
+
+.card__item--highlight {
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  color: #fff;
+  padding: 4em 3em 4em 3em;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__dollar {
+  font-size: calc(2 * 15px);
+  vertical-align: middle;
+}
+
+.card__price {
+  font-size: calc(4 * 15px);
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+}
+
+.card__list li:first-child {
+  border-top: 1px solid rgba(179, 181, 198, 0.5);
+}
+
+.card__list li {
+  border-bottom: 1px solid rgba(179, 181, 198, 0.5);
+  padding: 15px 0 15px 0;
+}
+
+.card__btn {
+  border: none;
+  border-radius: calc(10px / 2);
+  padding: 1em;
+  width: 100%;
+  margin-top: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.card__btn:hover {
+  background: none;
+  border: 1px solid #6d708d;
+  color: #696fdd;
+}
+
+.card__item--highlight .card__btn {
+  background: #fff;
+  color: #696fdd;
+}
+.card__item--highlight .card__btn:hover {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 1em 0 1em 0;
+  font-weight: 400;
 }
 
 .attribution a {

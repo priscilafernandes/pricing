@@ -124,12 +124,17 @@ body {
 .card__dollar {
   font-size: calc(2 * 15px);
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 .card__price {
   font-size: calc(4 * 15px);
   margin: 0;
   padding-bottom: 20px;
+}
+
+.none {
+  display: none;
 }
 
 .card__list {

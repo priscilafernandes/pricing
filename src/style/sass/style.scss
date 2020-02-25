@@ -143,12 +143,17 @@ body {
 .card__dollar {
   font-size: calc(2 * #{$font-size});
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 .card__price {
   font-size: calc(4 * #{$font-size});
   margin: 0;
   padding-bottom: 20px;
+}
+
+.none {
+  display: none;
 }
 
 .card__list {

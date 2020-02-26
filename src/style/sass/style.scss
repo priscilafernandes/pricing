@@ -1,5 +1,6 @@
 /* Colors */
 $linear-gradient: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+$light-linear-gradient: hsl(236, 72%, 89%), hsl(237, 63%, 77%);
 $very-light-grayish-blue: hsl(240, 78%, 98%);
 $light-grayish-blue: hsl(234, 14%, 74%);
 $grayish-blue: hsl(233, 13%, 49%);
@@ -13,8 +14,6 @@ $family: "Montserrat", sans-serif;
 $bold: 700;
 
 /* Layout */
-$mobile: 375px;
-$desktop: 1440px;
 $bg-top: url("../../../images/bg-top.svg");
 $bg-bottom: url("../../../images/bg-bottom.svg");
 $radius: 10px;
@@ -103,8 +102,7 @@ body {
 }
 
 .switch__input:checked + .switch__slider {
-  background: linear-gradient(to right, $linear-gradient);
-  opacity: 0.5;
+  background: linear-gradient(to right, $light-linear-gradient);
 }
 
 .switch__input:focus + .switch__slider {
@@ -174,7 +172,7 @@ body {
   border: none;
   border-radius: calc(#{$radius} / 2);
   padding: 1em;
-  width: 100%;
+  width: 240px;
   margin-top: 15px;
   text-transform: uppercase;
   background: linear-gradient(to right, $linear-gradient);
@@ -210,4 +208,24 @@ body {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    background: $bg-top no-repeat right top;
+    background-size: auto 35%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__item {
+    margin: 0 2em 0 2em;
+  }
+
+  .card__item--highlight {
+    margin: 2em 0 2em 0;
+  }
 }

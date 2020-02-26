@@ -84,8 +84,7 @@ body {
 }
 
 .switch__input:checked + .switch__slider {
-  background: linear-gradient(to right, #a3a8f0, #696fdd);
-  opacity: 0.5;
+  background: linear-gradient(to right, #cfd1f7, #9fa3e9);
 }
 
 .switch__input:focus + .switch__slider {
@@ -155,7 +154,7 @@ body {
   border: none;
   border-radius: calc(10px / 2);
   padding: 1em;
-  width: 100%;
+  width: 240px;
   margin-top: 15px;
   text-transform: uppercase;
   background: linear-gradient(to right, #a3a8f0, #696fdd);
@@ -189,6 +188,26 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    background: url("../../../images/bg-top.svg") no-repeat right top;
+    background-size: auto 35%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__item {
+    margin: 0 2em 0 2em;
+  }
+
+  .card__item--highlight {
+    margin: 2em 0 2em 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
